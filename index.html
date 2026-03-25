@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TaskFlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h1>TaskFlow</h1>
+  <button class="btn">Logout</button>
+</header>
+
+<nav class="navbar">
+  <a href="#">Dashboard</a>
+  <a href="#">Tasks</a>
+  <a href="#">New Task</a>
+</nav>
+
+<main class="main">
+
+  <!-- Task List -->
+  <div class="card">
+    <h2>Task List</h2>
+    <ul id="taskList">
+      <li>Task 1 <button onclick="deleteTask(this)">Delete</button></li>
+      <li>Task 2 <button onclick="deleteTask(this)">Delete</button></li>
+      <li>Task 3 <button onclick="deleteTask(this)">Delete</button></li>
+      <li>Task 4 <button onclick="deleteTask(this)">Delete</button></li>
+      <li>Task 5 <button onclick="deleteTask(this)">Delete</button></li>
+    </ul>
+  </div>
+
+  <!-- Form -->
+  <div class="card">
+    <h2>Create Task</h2>
+
+    <input type="text" id="title" placeholder="Title">
+    <textarea id="desc" placeholder="Description"></textarea>
+
+    <select id="status">
+      <option>Todo</option>
+      <option>In Progress</option>
+      <option>Done</option>
+    </select>
+
+    <button onclick="addTask()" class="btn">Create</button>
+
+    <p id="error" class="error"></p>
+  </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #4e73df, #224abe);
+  color: white;
+  padding: 15px 25px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  gap: 25px;
+  background: white;
+  padding: 12px 25px;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #4e73df;
+}
+
+/* Main Layout */
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 25px;
+}
+
+/* Cards */
+.card {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Buttons */
+.btn {
+  background: #4e73df;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #2e59d9;
+}
+
+/* Input Fields */
+input, textarea, select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Task List */
+#taskList li {
+  background: #f8f9fc;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete Button */
+#taskList button {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#taskList button:hover {
+  background: darkred;
+}
+
+/* Error */
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+}
